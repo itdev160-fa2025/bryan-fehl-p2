@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<!-- The main head tag, used to define metadata for the document -->
+	<head>
+        <!--
+            Student:  Bryan Fehl
+            Class:    ITDEV-160
+            Details:  Project 2 - 
+            Due Date: 12/01/24
+        -->
+            
+		<!-- Declare the encoding of the document -->
+		<meta charset="utf-8">
+
+        <!-- Provide a description of the web page for SEO purposes -->
+        <meta name="description" content="Order form for TRS">
+
+        <!-- Keywords to help with SEO -->
+        <meta name="keywords" content="TRP, ordering">
+
+         <!-- Specify a favicon for the page -->
+        <!-- Using multiple formats for different clients-->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+        <meta name="application-name" content="&nbsp;">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+
+        <!-- Import the Nunito Sans fonts for use -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+        <!-- Link to the stylesheet to be used for this document. -->
+        <link rel="stylesheet" href="styles/main.css">
+
+		<!-- Give the document a proper title --> 
+		<title>Theseus Retail Store (TRS) Quoting System</title> 
+	</head>
+
+	<!-- The body or contents of the document -->
+	<body>
+
+        <!-- The header for the page -->
+        <header id="header-container">
+            <img id="header-logo" alt="Company Logo" src="images/theseus-logo.png">
+            <h1 id="header-name">Theseus Retail Store (TRS) Quoting System</h1>
+            
+        </header>
+
+        <!-- The main contents of the web page -->
+        <main>
+            <section>
+                <h2>Inventory Order Form</h2>
+                <p>
+                    Welcome to the TRS online portal.  To prepare your order:
+                </p>
+                <ol>
+                    <li>Use the "Add New Line" button to add a new entry to the form.</li>
+                    <li>Use the "Remove Last Line" button to remove the last entry added to the form.</li>
+                    <li>Use the "Print" button when your order is ready and email the form to <a href="mailto:support@theseusretailstore.fake">support@theseusretailstore.fake</a></li>
+                </ol>
+                <form name="quote_form" id="quote_form">
+                    <fieldset>
+                        <legend>Adjustment</legend>
+                        <input class="adj-button" type="button" id="add-line"    value="Add New Line">
+                        <input class="adj-button" type="button" id="remove-line" value="Remove Last Line">
+                        <input class="adj-button" type="button" id="print-page" value="Print">
+                    </fieldset>
+                    <fieldset id="item-list">
+                        <legend>Item List</legend>
+                        <!-- This section will by dynamically populated using javascript-->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Total:</legend>
+                        <input class="input-display" id="total" type="text" disabled>
+                    </fieldset>
+
+                </form>
+            </section>
+        </main>
+
+        <!-- The footer for the page -->
+        <footer>
+            <hr>
+            <p>
+                &copy; Theseus Retail Store, LLC
+            </p>
+            <!-- Import pre-defined data -->
+            <script src="js/data.js"></script> 
+            <!-- Use custom javascript file -->
+            <script src="js/main.js"></script>
+        </footer>
+	</body> 
+</html> 

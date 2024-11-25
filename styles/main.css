@@ -1,0 +1,80 @@
+/* Set the general background color and font details */
+body {
+    background-color:rgb(238, 225, 208);
+    font-family: "Ysabeau", sans-serif;
+    font-size: large;
+}
+
+
+/* Increase the boldness of the font for legends */
+legend {
+    font-weight: bolder;
+}
+
+/* Create background colors that are different for even and odd rows in the calculator */
+.odd {
+    background-color: rgb(219, 202, 179);
+}
+.even {
+    background-color: rgb(212, 206, 206);
+}
+
+/* Create a nice looking rectangular border for a line item with proper padding between them */
+.line-item{
+    border-style:solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+/* Make the line number stand out */
+.item-number {
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 1%;
+}
+
+/* Create a grid container for allowing the logo and header to live on the "row" incely */
+#header-container {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(12, 1fr);  /* Creates a 2 row, 12 column grid */
+    gap: 50px;
+}
+
+/* Have the logo sit on the left side of the header */
+#header-logo{
+    grid-row: 1/2;          /* Row 1 */
+    grid-column: 1/ span 2; /* Columns one and 2 */
+    width: 200px;
+}
+
+/* Have the company name sit on the right side of the header */
+#header-name{
+    grid-row: 1/2;            /* Row 1 */
+    grid-column: 3 / span 9; /* Columns 3 through 12 */
+
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+}
+
+/* format the buttons */
+.adj-button {
+    padding: 1%;
+    font-size: larger;
+    margin: 1%;
+}
+
+#total {
+    text-align: center;
+    width: 15%;
+    font-size: x-large;
+}
+
+label {
+    margin-left: 1%;
+}
+
+.subtotal{
+    text-align: right;
+}
